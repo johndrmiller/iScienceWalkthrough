@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>07387_iScience_ConnectED_Walkthrough_Design_v2_8:22</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#FFFFFF;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=1024" />
+	<style>
+@font-face {
+    font-family: 'ArumSansRg';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansRegular.eot'); /* IE9 Compat Modes */
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansRegular.woff') format('woff'), /* Modern Browsers */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansRegular.svg#ArumSansRegular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'ArumSansRg';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBold.eot'); /* IE9 Compat Modes */
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBold.woff') format('woff'), /* Modern Browsers */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBold.svg#ArumSansBold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'ArumSansRg';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansItalic.eot'); /* IE9 Compat Modes */
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansItalic.woff') format('woff'), /* Modern Browsers */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansItalic.svg#ArumSansItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'ArumSansRg';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/ArumSansBoldItalic.svg#ArumSansBoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+</style>
+	<style>
+@font-face {
+    font-family: 'Vectipede';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-regular-webfont.eot');
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-regular-webfont.woff') format('woff'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-regular-webfont.ttf') format('truetype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-regular-webfont.svg#vectipede') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vectipede';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-italic-webfont.eot');
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-italic-webfont.woff') format('woff'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-italic-webfont.ttf') format('truetype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-italic-webfont.svg#vectipede_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Vectipede';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bold-webfont.eot');
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bold-webfont.woff') format('woff'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bold-webfont.ttf') format('truetype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bold-webfont.svg#vectipedebold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vectipede';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bolditalic-webfont.eot');
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bolditalic-webfont.woff') format('woff'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bolditalic-webfont.ttf') format('truetype'),
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/vectipederg-bolditalic-webfont.svg#vectipedebold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+</style>
+	<style>
+@font-face {
+    font-family: 'Interstate';
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/Interstate-Regular.eot'); /* IE9 Compat Modes */
+    src: url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/Interstate-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/Interstate-Regular.woff') format('woff'), /* Modern Browsers */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/Interstate-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/Interstate-Regular.svg#Interstate-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+</style>
+	
+	<style>
+		body {
+			min-width:1024px;
+			min-height: 730px;
+		}
+	</style>
+	
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="07387iscienceconnectedwalkthroughdesignv2822_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">
+		<script type="text/javascript" charset="utf-8" src="07387_iScience_ConnectED_Walkthrough_Design_v2_8%3A22.hyperesources/07387iscienceconnectedwalkthroughdesignv2822_hype_generated_script.js?60322"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none">
+
+		<div>3.
+</div>
+		<div>1.
+</div>
+		<div>START
+WALKTHROUGH
+</div>
+		<div></div>
+		<div>TECH TIPS</div>
+		<div>2.
+</div>
+		<div>Downloads</div>
+		<div>Minimum System Requirements</div>
+		<div>ConnectED Printable Quick Start Guide  (PDF, 3MB)</div>
+		<div>iScience:
+Teacher Digital Walkthrough
+</div>
+		<div>GO TO</div>
+		<div>This training portal is designed to teach you how to navigate iScience in ConnectED. We will be taking a look at the demo account. After exploring the Walkthrough and the Tech Tips, you can log in with the credentials listed below and review lessons from iScience.
+
+</div>
+		<div>HOME
+</div>
+		<div>WALKTHROUGH
+</div>
+		<div>TECH TIPS
+</div>
+		<div>connectED Log-in Screen
+</div>
+		<div>Next</div>
+		<div>Enter your Username and Password, then click Log In.
+
+</div>
+		<div>connectED Bookbag
+</div>
+		<div>Your ConnectED Content</div>
+		<div>Back</div>
+		<div>My Home</div>
+		<div>Scroll through Your ConnectED Content to find the Life iScience© 2017 Teacher Edition.</div>
+		<div>Teacher Center Dashboard
+</div>
+		<div>Click the Menu icon to display the site navigation menu.
+</div>
+		<div>The navigation menu displays the site’s content.  To hide the menu, click the Menu icon again.
+</div>
+		<div>Teacher Center Dashboard
+</div>
+		<div>Click eBook to view the currently selected lesson’s content in the Teacher’s Edition.
+</div>
+		<div>To access resources for the chapter or lesson, scroll through the Lesson Resources carousel and click on the desired resource.  
+</div>
+		<div>Use the adaptive LearnSmart® resource to help students learn and retain material. It’s included in ConnectED—just click the LearnSmart icon in the Lesson Resources carousel and you’re automatically logged in.
+</div>
+		<div>The Lesson Resources carousel also includes online lab resources for students.
+</div>
+		<div>Preview scheduled lesson plans and assignments for each class in this section.
+</div>
+		<div>To access online help or log out, click the User icon.
+</div>
+		<div>To search content by topic or standard, click the Search icon.  
+</div>
+		<div>Click Chapter/Lesson to open a drop-down menu.  
+</div>
+		<div>Review the Chapter/Lesson drop-down menu and click the lesson you’d like to review. In this example we will click Lesson 2: The Cell under Chapter 1.
+</div>
+		<div>Click the Menu icon to display the site navigation menu. 
+</div>
+		<div>Click Plan and Present.
+
+</div>
+		<div>Teacher Center Plan and Present
+</div>
+		<div>The Plan and Present window displays instructional content, gives you access to ready-to-use lessons, and allows you to customize pre-built lessons with your own resources.
+</div>
+		<div>Teacher Center Plan and Present
+</div>
+		<div>Lesson Planning tools allow you to add specific lessons to your teaching calendar, customize and create lesson plans for the chapter and lessons, and print lessons to PDF for offline learning. 
+</div>
+		<div>The Presentation button accesses presentations that walk you through the lesson.</div>
+		<div>Tips, strategies, and suggestions for implementing the lesson are displayed in the Engage field.  
+</div>
+		<div>Lesson-reinforcing resources are located on the right side of the screen. 
+</div>
+		<div>Click Engage to close the Engage field.
+
+</div>
+		<div>All the folders in this lesson are now displayed. Click Engagement Toolbox. 
+</div>
+		<div>The Engagement Toolbox field displays lesson strategies, exercises, activities, and resources.
+</div>
+		<div>Click a resource’s Gear icon to display a menu of options.
+
+</div>
+		<div>Teacher Center Assign
+</div>
+		<div>Click Assign this Resource.
+
+</div>
+		<div>The Assignment Name and Instructions field allows you to name an assignment and provide instructions. If you are assigning LearnSmart, you can include instructions about what students will Read, Practice, or Recharge(review). You can also identify specific students for assignments and choose when assignments will expire. 
+</div>
+		<div>Lesson strategies include critical thinking using a virtual lab, skill practice through learning exercises, writing support activities, and developing concepts through scaffolding and questions.
+</div>
+		<div>The Make an Assignment screen displays with the resource located on the right-hand side of the page in the Attach Resources and Content field.
+</div>
+		<div>To add a resource to a homework assignment, click Edit in the Attach Resources and Content field.
+</div>
+		<div>Select students that will receive assignments and send out student assignment notifications in this area.
+</div>
+		<div>The Edit Resources and Content screen displays. Click the Add button under a resource to add it to the assignment. In this example, we are clicking Add to attach LearnSmart, an adaptive teaching and learning tool, to the assignment.
+</div>
+		<div>Teacher Center Assign
+</div>
+		<div>When you are finished adding assignment resources, click Done.</div>
+		<div>Click the Menu icon to open the site navigation menu.
+</div>
+		<div>Click Resources to open the Resources screen and view resources organized by chapter and lesson.
+</div>
+		<div>Teacher Center Resources
+</div>
+		<div>Teacher Center Resources
+</div>
+		<div>Click Keyword Search to search for resources. Click the star under a resource to add it to the Favorites tab adjacent to the Keyword Search tab.
+</div>
+		<div>Click the Menu icon to open the site navigation menu.
+</div>
+		<div>Content is listed on the Lesson Search tab. Chapter/lesson dropdown menus located on the tab can be used to filter by specific resource type.
+</div>
+		<div>Teacher Center Assessment
+</div>
+		<div>Assessment resources are available in each chapter. Chapters can be clicked to:  
+• Access test banks and tailor assessments
+• Create customized worksheets to assign online or print and distribute
+• Prepare students for assesments with online testing</div>
+		<div>Teacher Center Closing
+</div>
+		<div>You’ve completed the overview—now feel free to explore on your own. If you already have access to ConnectED and course content, log in directly to your account. If not, use the demo site at mheonline.com/MS-iScienceSample to register for a free 30-day sample. </div>
+		<div>Click Assessment to open the Assessment screen.
+</div>
+		<div>ConnectED Tech Tips</div>
+		<div>• Disable pop-up blockers; some pieces of interactivity will open in a new window
+• Un-mute your device
+• If possible, use a hard-wired connection to the internet
+• Close unnecessary applications (they can slow down your machine)
+• This review site is not mobile-friendly; please view on a laptop or desktop
+</div>
+		<div>Before you start your digital review,
+there are a few things to take care of:
+</div>
+		<div>Teacher Center Professional Development
+</div>
+		<div>Access 24/7 Professional Learning Quick-Start and Implementation courses including:
+Implementation SupportWebinars and VideosScience and Engineering Practices and Project-Based Learning</div>
+		<div>Teacher Center Assessment
+</div>
+		<div>Click Professional Development to open the Professional Development screen.
+
+</div>
+		<div>Click Teacher Center at any time to return to the Teacher Center dashboard.
+</div>
+		<div>connectED
+</div>
+		<div>Assessment</div>
+		<div>Assign
+</div>
+		<div>Teacher Center</div>
+		<div>Professional Development</div>
+		<div>Resources</div>
+		<div>Closing</div>
+		<div>Plan and Present
+</div>
+		<div>Click Life iScience© 2017 Teacher Edition.</div>
+		<div>PRIVACY
+</div>
+		<div>©2016 McGraw-Hill Education. All Rights Reserved.</div>
+		<div>REPORT PIRACY
+</div>
+		<div>TERMS OF USE</div>
+		<div>Each lesson component contains research citations.
+</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
